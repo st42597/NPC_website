@@ -2,7 +2,6 @@ import React, {Component, useEffect} from 'react';
 import Control from './components/Control';
 import Content from './components/Content';
 import Write from './components/Write';
-import axios from 'axios';
 
 class Study extends Component{
   constructor(props){
@@ -17,13 +16,14 @@ class Study extends Component{
       content_advanced: [],
       content: []
     };
-    /*this.state.tmp에 노트리스트를 this.state.id를 파라미터로 하여 this.state.content에 스터디 마크다운을 가져옵니다.*/
+    /*
     axios.get('http://localhost//api/study/notes')
       .then(function(response){
         this.setState({
           tmp: response
         });
     })
+    */
      console.log(this.state.tmp);
     this.state.tmp = [
       {

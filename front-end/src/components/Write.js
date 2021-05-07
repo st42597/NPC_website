@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import './css/Write.css';
 import Slate_plain_text from './Slate_plain_text';
-import axios from 'axios';
 
 class Write extends Component{
 
@@ -209,6 +208,7 @@ class Write extends Component{
                                             userId: this.props.new_id,
                                             class: this.state.selected_class
                                             */
+                                           /*
                                             axios.post(' http://localhost/api/study/note/' + this.props.new_id, {
                                                 params: {
                                                     title: this.state.title,
@@ -229,7 +229,8 @@ class Write extends Component{
                                                 else {
                                                 console.log('Error', error.message);
                                                 }
-                                            });          
+                                            });    
+                                            */      
                                             overlay_inactive();
                                             document.getElementById("Write-create").style.opacity="0";
                                             document.getElementById("Write-create").style.zIndex="0";
@@ -246,6 +247,7 @@ class Write extends Component{
                                             console.log(this.state.selected_class);
                                             console.log(this.state.mode);
                                             /*this.state.selected_id에 해당하는 것 Modify*/
+                                            /*
                                             axios.post(' http://localhost/api/study/note/' + this.props.new_id, {
                                                 params: {
                                                     title: this.state.title,
@@ -267,6 +269,7 @@ class Write extends Component{
                                                 console.log('Error', error.message);
                                                 }
                                             });          
+                                            */
                                             overlay_inactive();
                                             document.getElementById("Write-create").style.opacity="0";
                                             document.getElementById("Write-create").style.zIndex="0";
